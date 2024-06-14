@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/realme/even
+DEVICE_PATH := device/realme/RMX3191
 
 # Call proprietary blob setup
 $(call inherit-product, vendor/realme/even/even-vendor.mk)
