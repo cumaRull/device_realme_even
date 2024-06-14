@@ -18,7 +18,7 @@
 
 set -e
 
-export DEVICE=even
+export DEVICE=RMX3191
 export VENDOR=realme
 
 INITIAL_COPYRIGHT_YEAR=2020
