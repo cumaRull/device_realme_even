@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_even.mk
+    $(LOCAL_DIR)/lineage_RMX3191.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_even-eng \
-    lineage_even-userdebug \
-    lineage_even-user
+    lineage_RMX3191-eng \
+    lineage_RMX3191-userdebug \
+    lineage_RMX3191-user
