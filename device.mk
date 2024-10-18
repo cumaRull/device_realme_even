@@ -408,3 +408,4 @@ PRODUCT_COPY_FILES += \
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/realme/even/even-vendor.mk)
+
