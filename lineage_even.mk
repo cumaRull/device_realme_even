@@ -19,7 +19,7 @@ PRODUCT_NAME := lineage_even
 PRODUCT_DEVICE := even
 PRODUCT_MANUFACTURER := realme
 PRODUCT_BRAND := realme
-PRODUCT_MODEL := realme C25/C25s/Narzo 50A
+PRODUCT_MODEL := realme C25
 
 PRODUCT_GMS_CLIENTID_BASE := android-realme
 
