@@ -356,7 +356,7 @@ PRODUCT_PACKAGES += \
     android.hardware.soundtrigger@2.3-impl
 
 # Shipping API level
-PRODUCT_SHIPPING_API_LEVEL := 30
+PRODUCT_SHIPPING_API_LEVEL := 31
 
 # Extra VNDK Versions
 PRODUCT_EXTRA_VNDK_VERSIONS := 31
