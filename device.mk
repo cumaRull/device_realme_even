@@ -171,7 +171,9 @@ PRODUCT_PACKAGES += \
     android.hardware.light-service.even
 
 # Properties
-include $(LOCAL_PATH)/vendor_logtag.mk
+-include $(DEVICE_PATH)/configs/props/system.prop
+-include $(DEVICE_PATH)/configs/props/product.prop
+PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
 # Media
 PRODUCT_PACKAGES += \
@@ -355,6 +357,9 @@ PRODUCT_PACKAGES += \
 
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 30
+
+# Extra VNDK Versions
+PRODUCT_EXTRA_VNDK_VERSIONS := 31
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
