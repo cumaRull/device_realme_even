@@ -70,7 +70,7 @@ TARGET_KERNEL_SOURCE := kernel/realme/even
 TARGET_KERNEL_CONFIG := k68v1_64_defconfig
 TARGET_KERNEL_CLANG_COMPILE := true
 BOARD_KERNEL_IMAGE_NAME := Image.gz
-TARGET_KERNEL_CLANG_VERSION := r383902
+TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/proton-clang
 TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/mt6768.dtb
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 
