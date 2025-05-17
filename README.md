@@ -1,31 +1,50 @@
-Copyright (C) 2020 - Android Open Source Project
+# Device Tree for Realme C25 and Realme C25s 
 
-Device Tree - Realme C11 / Realme C12 / Realme C15 (RMX2185)
-===============================================================
+The Realme C25 and Realme C25s are budget smartphones from Realme. These are announced and released in March 2021 and June 2021.
 
-realme C11 / C12 & C15 ( codenamed _"RMX2185"_) are same devices with just RAM & ROM being the difference between them !
-
-This device tree commonize them as "RMX2185"
-================================================================
+## Device Specifications
+Basic   | Spec Sheet
+-------:|:-------------------------
+CPU     | Octa-core (2x2.0 GHz Cortex-A75 & 6x1.7 GHz Cortex-A55)
+Chipset | MediaTek Helio G70 (12 nm)
+GPU     | Mali-G52 2EEMC2
+Memory  | 4 GB
+Shipped Android Version | Android 11, realme UI 2.0 (Upgradable to Android 12, realme UI 3.0)
+Storage | 64/128 GB (eMMC type)
+MicroSD | Up to 512 GB 
+Battery | Li-Po 6000 mAh, non-removable
+Dimensions | 164.4 x 75 x 9 mm (6.47 x 2.95 x 0.35 in)
+Display | 720 x 1560 pixels, 6.50" IPS LCD, 20:9 ratio (~270 ppi density)
+Rear Camera  | Triple : 48MP(Global)/13 MP(India); 2MP(depth); 2MP(Macro)
+Front Camera | Single: 8 MP
+Release Month | 2021, March 27
 
 Basic   | Spec Sheet
 -------:|:-------------------------
-CPU     | Octa-core (4x2.3 GHz Cortex-A53 & 4x1.8 GHz Cortex-A53)
-Chipset | MediaTek Helio G35 (12 nm)
-GPU     | PowerVR GE8320
-Memory  | 2/3/4 GB
-Shipped Android Version | Android 10, realme UI 1.0 (Upgradeable to Android 11,realme UI 2.0)
-Storage | 32/64 GB (eMMC)
-MicroSD | Up to 512 GB (Hybrid)
-Battery | Li-Po 5000 mAh, non-removable
-Dimensions | 164.4 x 75.9 x 9.1 mm (6.47 x 2.99 x 0.36 in)
+CPU     | Octa-core (2x2.0 GHz Cortex-A75 & 6x1.8 GHz Cortex-A55)
+Chipset | MediaTek Helio G85 (12 nm)
+GPU     | Mali-G52 2EEMC2
+Memory  | 4 GB
+Shipped Android Version | Android 11, realme UI 2.0 (Upgradable to Android 12, realme UI 3.0)
+Storage | 64/128 GB (eMMC type)
+MicroSD | Up to 512 GB 
+Battery | Li-Po 6000 mAh, non-removable
+Dimensions | 164.4 x 75 x 9 mm (6.47 x 2.95 x 0.35 in)
 Display | 720 x 1560 pixels, 6.50" IPS LCD, 20:9 ratio (~270 ppi density)
-Rear Camera  | Dual : 13 MP, f/2.2, AF, 1.25µm ; 2MP , f/2.4 (depth)
-Front Camera | 	5 MP, f/2.0, 1/2.8", 0.9µm
-Release Month | 2020, June 30
+Rear Camera  | Triple : 48MP(Global)/13 MP(India); 2MP(depth); 2MP(Macro)
+Front Camera | Single: 8 MP
+Release Month | 2021, June 9
 
-![Realme C11](https://fdn2.gsmarena.com/vv/pics/realme/realme-c11-1.jpg "Realme C11")
+# Patches
 
-Note: 
-* Apply following [***Patches***](https://github.com/techyminati/patches) On Respective Directories of ROM Source is Mandatory for Boot ! 
-* This device tree is based on realmeUI 2.0 Firmware.
+## Encryption Keystore2 patch (must for booting)
+
+* cd system/security && git fetch https://github.com/AOSP-12-RMX2020/android_system_security && git cherry-pick d2bf978444da8d80a71b34c37f1c1853a405935c && cd ../..
+
+## VOLTE Patches
+
+* cd frameworks/opt/net/ims && git fetch https://github.com/AOSP-12-RMX2020/frameworks_opt_net_ims && git cherry-pick 4f35ccb8bf0362c31bf5f074bcb7070da660412a^..3fe1cb7b6b2673adfce2b9232dfaf81375398efb && cd ../../../.. 
+* cd packages/modules/Wifi && git fetch https://github.com/AOSP-12-RMX2020/packages_modules_Wifi && git cherry-pick c6e404695bc451a9667f4893501ef8fe78e1a0b7^..90fc3f6781171dc27fed16b60575f9ea62f02e7a && cd ../../.. 
+* cd frameworks/opt/telephony && git fetch https://github.com/phhusson/platform_frameworks_opt_telephony android-12.0.0_r26-phh && git cherry-pick 6f116d4cdb716072261ecfe532da527182f6dad6 && cd ../../..
+
+Copyright (C) 2022 Lineage OS
