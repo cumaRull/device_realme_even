@@ -1,40 +1,31 @@
-Realme C25/Realme C25S Device Tree - RMX3191/RMX3195
+Copyright (C) 2020 - Android Open Source Project
+
+Device Tree - Realme C11 / Realme C12 / Realme C15 (RMX2185)
+===============================================================
+
+realme C11 / C12 & C15 ( codenamed _"RMX2185"_) are same devices with just RAM & ROM being the difference between them !
+
+This device tree commonize them as "RMX2185"
 ================================================================
 
-
 Basic   | Spec Sheet
 -------:|:-------------------------
-CPU     | Octa-core (2x2.0 GHz Cortex-A75 & 6x1.7 GHz Cortex-A55)
-Chipset | MediaTek Helio G70 (12 nm)
-GPU     | Mali-G52 2EEMC2
-Memory  | 4 GB
-Shipped Android Version | Android 11, realme UI 2.0 (Upgradable to Android 12, realme UI 3.0)
-Storage | 64/128 GB (eMMC type)
-MicroSD | Up to 512 GB 
-Battery | Li-Po 6000 mAh, non-removable
-Dimensions | 164.4 x 75 x 9 mm (6.47 x 2.95 x 0.35 in)
+CPU     | Octa-core (4x2.3 GHz Cortex-A53 & 4x1.8 GHz Cortex-A53)
+Chipset | MediaTek Helio G35 (12 nm)
+GPU     | PowerVR GE8320
+Memory  | 2/3/4 GB
+Shipped Android Version | Android 10, realme UI 1.0 (Upgradeable to Android 11,realme UI 2.0)
+Storage | 32/64 GB (eMMC)
+MicroSD | Up to 512 GB (Hybrid)
+Battery | Li-Po 5000 mAh, non-removable
+Dimensions | 164.4 x 75.9 x 9.1 mm (6.47 x 2.99 x 0.36 in)
 Display | 720 x 1560 pixels, 6.50" IPS LCD, 20:9 ratio (~270 ppi density)
-Rear Camera  | Triple : 48MP(Global)/13 MP(India); 2MP(depth); 2MP(Macro)
-Front Camera | Single: 8 MP
-Release Month | 2021, March 27
+Rear Camera  | Dual : 13 MP, f/2.2, AF, 1.25µm ; 2MP , f/2.4 (depth)
+Front Camera | 	5 MP, f/2.0, 1/2.8", 0.9µm
+Release Month | 2020, June 30
 
-Basic   | Spec Sheet
--------:|:-------------------------
-CPU     | Octa-core (2x2.0 GHz Cortex-A75 & 6x1.8 GHz Cortex-A55)
-Chipset | MediaTek Helio G85 (12 nm)
-GPU     | Mali-G52 2EEMC2
-Memory  | 4 GB
-Shipped Android Version | Android 11, realme UI 2.0 (Upgradable to Android 12, realme UI 3.0)
-Storage | 64/128 GB (eMMC type)
-MicroSD | Up to 512 GB 
-Battery | Li-Po 6000 mAh, non-removable
-Dimensions | 164.4 x 75 x 9 mm (6.47 x 2.95 x 0.35 in)
-Display | 720 x 1560 pixels, 6.50" IPS LCD, 20:9 ratio (~270 ppi density)
-Rear Camera  | Triple : 48MP(Global)/13 MP(India); 2MP(depth); 2MP(Macro)
-Front Camera | Single: 8 MP
-Release Month | 2021, June 9
+![Realme C11](https://fdn2.gsmarena.com/vv/pics/realme/realme-c11-1.jpg "Realme C11")
 
-![Realme C25](https://fdn2.gsmarena.com/vv/pics/realme/realme-c25-1.jpg "Realme C25")
-![Realme C25s](https://fdn2.gsmarena.com/vv/pics/realme/realme-c25s-1.jpg "Realme C25s")
-
-Copyright (C) 2022 Lineage OS
+Note: 
+* Apply following [***Patches***](https://github.com/techyminati/patches) On Respective Directories of ROM Source is Mandatory for Boot ! 
+* This device tree is based on realmeUI 2.0 Firmware.
