@@ -80,7 +80,7 @@ BOARD_BOOT_HEADER_VERSION := 2
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_SOURCE := kernel/realme/even
-TARGET_KERNEL_CONFIG := even_defconfig
+TARGET_KERNEL_CONFIG := RMX3191_ksu_defconfig
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/mylitle-clang
 TARGET_KERNEL_ADDITIONAL_FLAGS += HOSTCFLAGS=" -fuse-ld=lld -Wno-unused-command-line-argument"
