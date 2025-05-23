@@ -84,7 +84,7 @@ TARGET_KERNEL_SOURCE := kernel/realme/even
 TARGET_KERNEL_CONFIG := even_defconfig
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/mylitle-clang
-BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
+
 
 
 BOARD_MKBOOTIMG_ARGS += --base $(BOARD_KERNEL_BASE)
