@@ -89,8 +89,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.mt6768.rc \
     fstab.mt6768 \
-    perf_profile.sh \
-    swap_enable.sh
+    perf_profile.sh 
 
 # Keylayouts
 PRODUCT_COPY_FILES += \
