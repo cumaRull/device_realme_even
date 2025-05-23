@@ -27,20 +27,9 @@ vendor/lib/modules/wmt_drv.ko:product/vendor_overlay/30/lib/modules/wmt_drv.ko
 
 # Mediatek IMS
 # IMS
--framework/mediatek-common.jar
--framework/mediatek-framework.jar
--framework/mediatek-ims-base.jar
--framework/mediatek-ims-common.jar
--framework/mediatek-telecom-common.jar
--framework/mediatek-telephony-base.jar
--framework/mediatek-telephony-common.jar
--priv-app/ImsService/ImsService.apk|fd48e90f3e4dbd91367159fa1025945d5ca8f6fe
 bin/vtservice
 etc/init/init.vtservice.rc
 etc/permissions/privapp-permissions-mediatek.xml
-framework/mediatek-ims-extension-plugin.jar
-framework/mediatek-ims-legacy.jar
-lib/libcomutils.so
 lib/libimsma.so
 lib/libimsma_adapt.so
 lib/libimsma_rtp.so
