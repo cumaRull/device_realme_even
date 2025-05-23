@@ -134,8 +134,9 @@ PRODUCT_PACKAGES += \
 DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay
 
+# Camera
 PRODUCT_PACKAGES += \
-    NotchBarKiller
+    GoogleCameraGo
 
 # Permissions
 PRODUCT_COPY_FILES += \
