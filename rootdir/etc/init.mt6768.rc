@@ -770,6 +770,19 @@ on boot
     chmod 0660 /proc/hps/up_times
     chown system system /proc/hps/down_times
     chmod 0660 /proc/hps/down_times
+	
+	# USB-OTG
+    chown system system /sys/class/power_supply/usb/otg_switch
+    chmod 0666 /sys/class/power_supply/usb/otg_switch
+
+    # Smart Charging
+    chown system system /sys/class/power_supply/battery/input_suspend
+    chown system system /sys/class/power_supply/battery/charging_enabled
+    chown system system /sys/class/power_supply/battery/mmi_charging_enable
+    chmod 0666 /sys/class/power_supply/battery/input_suspend
+    chmod 0666 /sys/class/power_supply/battery/charging_enabled
+    chmod 0666 /sys/class/power_supply/battery/mmi_charging_enable
+
 
 # PPM
     chown system system /proc/ppm/mode
@@ -1041,14 +1054,3 @@ service osi /system/bin/osi
     #seclabel u:r:osi:s0
 	
 	
-    # USB-OTG
-    chown system system /sys/class/power_supply/usb/otg_switch
-    chmod 0666 /sys/class/power_supply/usb/otg_switch
-
-    # Smart Charging
-    chown system system /sys/class/power_supply/battery/input_suspend
-    chown system system /sys/class/power_supply/battery/charging_enabled
-    chown system system /sys/class/power_supply/battery/mmi_charging_enable
-    chmod 0666 /sys/class/power_supply/battery/input_suspend
-    chmod 0666 /sys/class/power_supply/battery/charging_enabled
-    chmod 0666 /sys/class/power_supply/battery/mmi_charging_enable
