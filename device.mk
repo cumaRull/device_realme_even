@@ -105,10 +105,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     prebuilts/vndk/v30/arm64/arch-arm64-armv8-a/shared/vndk-core/libui.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libui-v30.so
 
-# DT2W
-PRODUCT_PACKAGES += \
-    DT2W-Service-even
-
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.even
