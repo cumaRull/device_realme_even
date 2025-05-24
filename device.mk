@@ -46,7 +46,7 @@ PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_EXTRA_VNDK_VERSIONS := 30
 
 # Speed profile services and wifi-service to reduce RAM and storage
-PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-
+PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
 
 # Inherit several Android Go Configurations(Beneficial for everyone, even on non-Go devices)
 PRODUCT_USE_PROFILE_FOR_BOOT_IMAGE := true
